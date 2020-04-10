@@ -1,1 +1,8 @@
 # raspi-config
+## setup
+```
+git clone --bare https://github.com/xerg0n/raspi-config.git .dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+config config status.showUntrackedFiles no
+config checkout
+```
